@@ -6,82 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Survey Form</title>
+    <title>Gym Survey</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 id="title">Classroom Survey</h1>
-            <p id="description">Please take a few minutes to fill out when conducting an observation</p>
-        </header>
-
-        <form action="#" id="survey-form">
-            <div class="form-group">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Enter your name..." required>
-            </div>
-            <div class="form-group">
-                <label for="email" id="email-label">E-mail</label>
-                <input type="email" id="email" placeholder="Enter your E-mail..." required>
-            </div>
-            <div class="form-group">
-                <label for="number" id="number-label">Grade level</label>
-                <input type="number" id="number" min="5" max="8" placeholder="Grade Nr.">
-            </div>
-            <div class="form-group">
-                <label for="dropdown">Teacher Observed</label>
-                <select name="teachers" id="dropdown">
-                    <option value="empty-option"></option>
-                    <option value="poudrier-tina">Poudrier, Tina</option>
-                    <option value="stone-ryan">Stone, Ryan</option>
-                    <option value="torres-michelle">Torres, Michelle</option>
+    <div class="container" align="center">
+        <div id="image">
+            <img src="https://www.jotform.com/uploads/kevinthomasscott00/form_files/AF-Logo-LMHH-Tagline-Horizontal-Reversed.5de983d62b8549.34026478.png"
+                style="width:640px; height:678">
+        </div>
+        <div id="body">
+            <h1 id="title">Membership Cancellation Survey Form</h1>
+            <p id="description">Tell us about your experience with our gym!</p>
+            <hr>
+            <form id="survey-form">
+                <label id="name-label" for="name">
+                    <p>Name</p>
+                </label>
+                <input id="name" type="text" placeholder="Enter Your Name" required>
+                <label id="email-label" for="email">
+                    <p>E-mail</p>
+                </label>
+                <input id="email" type="text" placeholder="Enter Your E-mail" required>
+                <label id="number-label" for="number">
+                    <p>Age</p>
+                </label>
+                <input id="number" type="number" placeholder="Age" min="15" max="99" required>
+                <p>What is the main reason for cancelling your membership?</p>
+                <select id="dropdown">
+                    <option value="default">-</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Financial">Financial</option>
+                    <option value="Non-Usage">Non-Usage</option>
+                    <option value="Relocation">Relocation</option>
+                    <option value="Motivation">Motivation</option>
+                    <option value="Other">Other</option>
                 </select>
-            </div>
-            <div class="form-group">
-                <p>Overall Impression of Class</p>
-                <label for="all-children">Learning is taking place by all children</label>
-                <input type="radio" name="learning-input" id="all-children" value="all-children" checked>
-                <label for="most-chlidren">Learning is taking place by most children</label>
-                <input type="radio" name="learning-input" id="most-chlidren" value="most-chlidren">
-                <label for="some-children">Learning is taking place by a some children</label>
-                <input type="radio" name="learning-input" id="some-children" value="some-children">
-                <label for="few-children">Learning is taking place by few children</label>
-                <input type="radio" name="learning-input" id="few-children" value="few-children">
-            </div>
-            <div class="form-group">
-                <p>Teacher Behavior</p>
-                <input type="checkbox" name="teacher-behavior" id="lecturing" value="lecturing">
-                <label for="lecturing">Modeling/Lecturing</label>
-                <input type="checkbox" name="teacher-behavior" id="grading" value="grading">
-                <label for="grading">Grading Papers</label>
-                <input type="checkbox" name="teacher-behavior" id="on-computer" value="on-computer">
-                <label for="on-computer">On Computer</label>
-                <input type="checkbox" name="teacher-behavior" id="guided-practice" value="guided-practice">
-                <label for="guided-practice">Guided Practice</label>
-            </div>
-
-            <div class="form-group">
-                <p>Instructional Strategies</p>
-                <input type="checkbox" name="instructional-strategies" id="note-taking" value="note-taking">
-                <label for="note-taking">Note Taking</label>
-                <input type="checkbox" name="instructional-strategies" id="inquiry" value="inquiry">
-                <label for="inquiry">Inquiry</label>
-                <input type="checkbox" name="instructional-strategies" id="performance-task" value="performance-task">
-                <label for="performance-task">Performance Task</label>
-                <input type="checkbox" name="instructional-strategies" id="review" value="review">
-                <label for="review">Review</label>
-            </div>
-            <div class="form-group">
-                <label for="observation">Observations</label>
-                <textarea name="observation" id="observation" cols="30" rows="10"
-                    placeholder="Additional comments..."></textarea>
-            </div>
-            <button id="submit">Submit</button>
-        </form>
-    </div>
-
-
+                <p>How often do you use the club?</p>
+                <input type="radio" name="option" value="1">
+                Once a month</input>
+                <br>
+                <input type="radio" name="option" value="2">
+                Once a week</input>
+                <br>
+                <input type="radio" name="option" value="3">
+                2-3 times a week</input>
+                <br>
+                <input type="radio" name="option" value="4">
+                4+time a week</input>
+                <br>
+                <p>Which of the following services did you use at the club?</p>
+                <input type="checkbox" name="service" value="1">
+                Fitness Consultation</input>
+                <br>
+                <input type="checkbox" name="service" value="2">
+                Small Group Training</input>
+                <br>
+                <input type="checkbox" name="service" value="3">
+                TEAM Training</input>
+                <br>
+                <input type="checkbox" name="service" value="4">
+                1-on-1 Training</input>
+                <br>
+                <input type="checkbox" name="service" value="5">
+                Tanning/Massage</input>
+                <br>
+                <input type="checkbox" name="service" value="6">
+                Anytime Fitness App</input>
+                <br>
+                <p>How was your personal experience with Anytime Fitness?</p>
+                <textarea id="comment" rows="4" cold="40" placeholder="Add Your Comment Here"></textarea>
+                <br>
+                <input id="submit" type="submit" value="Submit"></input>
+            </form>
+        </div>
 </body>
 
 </html>
